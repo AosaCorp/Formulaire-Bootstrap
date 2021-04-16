@@ -1,0 +1,10 @@
+.custom-line{
+    min-height: 5rem;
+    margin-bottom: 1rem;
+    background-color: RGBa(60,240,160,0.7); /*Vert*/
+}
+
+.custom-line > .col-3{
+	min-height: 5rem;
+    background-color: RGBa(60,120,240,0.7); /*Bleu*/
+}

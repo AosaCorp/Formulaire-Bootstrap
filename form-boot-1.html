@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bootstrap</title>
+    <meta charset="utf-8">
+    <script src="javascript.js" async></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <p class="h1">Formulaires</h1>
+        <form class="needs-validation form-inline" novalidate>
+            <fieldset class="text-auto border rounded border-dark p-3">
+
+                <legend class=" col-auto text-center">Exemple de formulaire Bootstrap</legend>
+
+                <div class="form-group row m-3">
+                    <label class="col-4" for="nom">Nom</label>
+                    <div class="col">
+                        <input class="form-control" type="text" id="nom" name="nom" required>
+                        <div class="valid-feedback">Ok !</div>
+                        <div class="invalid-feedback">Valeur incorrecte</div>
+                    </div>
+                </div>
+
+                <div class="form-group row m-3">
+                    <label for="mail" class="col-4">email</label>
+                    <div class="col">
+                        <input class="form-control" type="email" id="mail" name="mail" required>
+                        <div class="valid-feedback">Ok !</div>
+                        <div class="invalid-feedback">Valeur incorrecte</div>
+                    </div>
+                </div>
+
+                <div class="form-group row m-3">
+                    <label class="col-4 mr-3">Sexe </label>
+                    
+                        <div class="form-check col d-flex flex-wrap text-auto">
+                            <div class="row">
+                                <input class="form-check-input" type="radio" id="masculin" name="sexe" value="Masculin" required>
+                                <label class="form-check-label col-auto" for="masculin" class="form-check-label">Masculin</label>
+                                <input class="form-check-input" type="radio" id="feminin" name="sexe" value="Feminin" required>
+                                <label class="form-check-label col-auto" for="feminin" class="form-check-label">Feminin </label>
+                                <div class="w-100"></div>
+                                <div class="invalid-feedback col text-auto">Vous devez selectionner un genre</div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="form-group row m-3">
+                    <label for="pays" class="col-4">Pays</label>
+                    <select class=" row form-control mx-3" noplaceholder required>
+                        <option>Cameroun</option>
+                        <option>USA</option>
+                        <option>Canada</option>
+                    </select>
+                </div>
+
+                <div class="form-group row m-3">
+                    <label for="bio" class="col-4">Biographie</label>
+                    <textarea class="row mx-3" id="bio" rows="3"></textarea>
+                </div>
+
+                <div class="form-group row m-3">
+                    <label class="col-4" for="fichier">Votre CV</label>
+                    <input class="col" type="file" id="fichier" name="fichier">
+                </div>
+
+                <div class="form-group row m-3">
+                    <div class="form-check row">
+                        <input class="form-check-input" type="checkbox" value="" id="cgu" required>
+                        <label class="form-check-label" for="cgu">J'accepte les conditions générales d'utilisation et de vente</label>
+                        <div class="invalid-feedback row text-center">Vous devez accepter les CGU pour continuer</div>
+                     </div>
+                </div>
+
+                <div class="form-group row m-3">
+                    <div class="col text-center">
+                        <button class="btn btn-primary" type="submit">Envoyer</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
+
